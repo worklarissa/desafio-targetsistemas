@@ -13,22 +13,25 @@ console.log(listaImpares)
 
 //b) 2, 4, 8, 16, 32, 64, ____
 //entendi que os números estão sendo multiplicados por dois
-/*let listaVezes = [2];
+let listaVezes = [2, 4, 8, 16, 32, 64];
+ 
+let multiplica = listaVezes[listaVezes.length-1] * 2
+listaVezes.push(multiplica)
 
-while(){
-    listaVezes.push(indice)
-}
-
-console.log(listaVezes)*/
+//console.log(listaVezes)
 
 
 
 //c) 0, 1, 4, 9, 16, 25, 36, ____
-let listaSomaImpares = []
-//pegar o indice
-//pegar o valor do array de impares
-//somar o valres correspondentes ao indices
+let listaSomaImpares = [0, 1, 4, 9, 16, 25,36]
+//somar o valores correspondentes ao indices nas listas listaSomaImpares e listaImpares 
+const somando = [];
 
+for (let i = 0; i < listaSomaImpares.length; i++) {
+        somando.push(listaSomaImpares[i] + listaImpares[i]);
+    }
+
+console.log(somando)
 
 //d) 4, 16, 36, 64, ____
 
@@ -43,7 +46,7 @@ while (fibonnaci.length < 100) {
 
 }
 
-console.log(fibonnaci)
+//console.log(fibonnaci)
 
 
 //f) 2,10, 12, 16, 17, 18, 19, ____
